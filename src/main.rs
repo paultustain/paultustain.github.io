@@ -1,6 +1,5 @@
 use yew::prelude::*;
 
-
 #[derive(PartialEq)]
 struct Video {
     id: usize,
@@ -23,8 +22,8 @@ fn videos_list(VideosListProps { videos }: &VideosListProps) -> Html {
 }
 
 
-#[function_component(App)]
-fn app() -> Html {
+#[function_component()]
+fn App() -> Html {
     let videos = vec![
         Video {
             id: 1,
@@ -71,8 +70,5 @@ fn app() -> Html {
 }
 
 fn main() {
-
-
-
     yew::Renderer::<App>::new().render();
 }
