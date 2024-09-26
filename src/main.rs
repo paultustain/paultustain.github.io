@@ -22,7 +22,7 @@ fn videos_list(VideosListProps { videos }: &VideosListProps) -> Html {
 }
 
 
-#[function_component()]
+#[function_component]
 fn App() -> Html {
     let videos = vec![
         Video {
